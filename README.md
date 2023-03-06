@@ -1,24 +1,38 @@
-My time shredder
-Made by Ze Sheng
-
-1. In this assignment I implemented a shell named penn-shredder that will restrict the runtime of executed processes.
-
-2. This shell will read input from the user and execute it as a new process, but if the process exceeds a timeout, it will be terminated. 
-
-3. The code only has a specified set of Linux system calls and standard C library functions to process.
+# Time Shredder
+Author: Ze Sheng (Owen Sanazas)
 
 
-How to start?
+## Submitted Source Files
+* processShredder.c
+* shredder-behaviour.c
+* shredder-behaviour.h
+* utils.c
+* utils.h
 
-./shredder 4
+## Progress
+* ✓ - Finished
+* O - In progess
+* ? - Have problem
+* blank - Not started
 
-where 4 means the timeout is 4, every child process runs over 4 secs will be killed
+Section | State
+:----: |:----:
+ctrl + c  | ✓
+EOF  | ✓
+'\n' handle | ✓
+All-space input handle | ✓
+Timeout parser check | ✓
+Parser check | ✓
+Signal handler check | ✓
+mode 1: use kill()| ✓
+mode 2: no kill() | ✓
+SIGALRM handler check | ✓
+Memory leaks check | ✓
+Invalid R/W check | ✓
 
 
-Here is an example of sleep command:
-/bin/sleep 3
-this means the shell will sleep for 3 secs
 
-/bin/sleep 5
-this will be terminatied by the shell because the timeout is 4
- 
+## Overview of work accomplished
+* This time shredder can be run with a time input, i.e. ./shredder 4 means the timeout is 4 and all children processes who runs over 4 secs will be terminated.
+* All commands are parsed by parser.c
+* Ctrl-C, Ctrl-D and other signal are handled correctly.
