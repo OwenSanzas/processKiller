@@ -1,7 +1,7 @@
 ######################################################################
 #
-#                       Author: Hannah Pan
-#                       Date:   01/13/2021
+#                       Author: Ze Sheng
+#                       Date:   01/13/2023
 #
 # The autograder will run the following command to build the program:
 #
@@ -15,7 +15,7 @@
 
 # name of the program to build
 #
-PROG=penn-shredder
+PROG=shredder
 
 PROMPT='"$(PROG)\# "'
 CATCHPHRASE='"Bwahaha ... Tonight, I dine on turtle soup!\n"'
