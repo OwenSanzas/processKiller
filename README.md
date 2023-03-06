@@ -2,7 +2,7 @@
 Author: Ze Sheng (Owen Sanazas)
 
 
-## Submitted Source Files
+## Source Files
 * processShredder.c
 * shredder-behaviour.c
 * shredder-behaviour.h
