@@ -1,5 +1,4 @@
-CIS 548 - Project 0
-Penn-shredder
+My time shredder
 Made by Ze Sheng
 
 1. In this assignment I implemented a shell named penn-shredder that will restrict the runtime of executed processes.
@@ -11,7 +10,7 @@ Made by Ze Sheng
 
 How to start?
 
-./penn-shredder 4
+./shredder 4
 
 where 4 means the timeout is 4, every child process runs over 4 secs will be killed
 
